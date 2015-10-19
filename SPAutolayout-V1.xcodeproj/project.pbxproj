@@ -18,16 +18,16 @@
 
 /* Begin PBXFileReference section */
 		3E91A21D1BD512CA00660650 /* SPAutolayout-V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPAutolayout-V1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E91A2211BD512CA00660650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E91A2211BD512CA00660650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SPSupportingFiles/main.m; sourceTree = "<group>"; };
 		3E91A2231BD512CA00660650 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E91A2241BD512CA00660650 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3E91A2261BD512CA00660650 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E91A2271BD512CA00660650 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E91A2261BD512CA00660650 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = SPClasses/SPControllers/ViewController.h; sourceTree = "<group>"; };
+		3E91A2271BD512CA00660650 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = SPClasses/SPControllers/ViewController.m; sourceTree = "<group>"; };
 		3E91A22A1BD512CA00660650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E91A22C1BD512CA00660650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E91A22F1BD512CA00660650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E91A2311BD512CA00660650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E91A2381BD5131C00660650 /* Data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Data.txt; sourceTree = "<group>"; };
+		3E91A2381BD5131C00660650 /* Data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Data.txt; path = SPSupportingFiles/Data.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,7 @@
 			children = (
 				3E91A2231BD512CA00660650 /* AppDelegate.h */,
 				3E91A2241BD512CA00660650 /* AppDelegate.m */,
-				3E91A2261BD512CA00660650 /* ViewController.h */,
-				3E91A2271BD512CA00660650 /* ViewController.m */,
+				3E91A23A1BD529DC00660650 /* SPClasses */,
 				3E91A2371BD512DF00660650 /* SPStoryboards */,
 				3E91A22C1BD512CA00660650 /* Assets.xcassets */,
 				3E91A2311BD512CA00660650 /* Info.plist */,
@@ -88,6 +87,23 @@
 				3E91A22E1BD512CA00660650 /* LaunchScreen.storyboard */,
 			);
 			name = SPStoryboards;
+			sourceTree = "<group>";
+		};
+		3E91A23A1BD529DC00660650 /* SPClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3E91A23B1BD529E900660650 /* SPControllers */,
+			);
+			name = SPClasses;
+			sourceTree = "<group>";
+		};
+		3E91A23B1BD529E900660650 /* SPControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E91A2261BD512CA00660650 /* ViewController.h */,
+				3E91A2271BD512CA00660650 /* ViewController.m */,
+			);
+			name = SPControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
