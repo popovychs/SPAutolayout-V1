@@ -10,18 +10,26 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showText:(UIButton *)sender {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"txt"];
+    NSString *textFromFile = [NSString stringWithContentsOfFile:filePath
+                                                       encoding:NSMacOSRomanStringEncoding
+                                                          error:nil];
+    _label.text = textFromFile;
+}
+
+- (IBAction)clearText:(UIButton *)sender {
+    _label.text = @"";
 }
 
 @end
